@@ -149,42 +149,6 @@
     {
       "Name": "B101",
       "Type": "LT"
-    },
-    {
-      "Name": "B102",
-      "Type": "LT"
-    },
-    {
-      "Name": "B103",
-      "Type": "LT"
-    },
-    {
-      "Name": "B201",
-      "Type": "LT"
-    },
-    {
-      "Name": "B202",
-      "Type": "LT"
-    },
-    {
-      "Name": "B203",
-      "Type": "LT"
-    },
-    {
-      "Name": "LabA",
-      "Type": "TH"
-    },
-    {
-      "Name": "LabB",
-      "Type": "TH"
-    },
-    {
-      "Name": "LabC",
-      "Type": "TH"
-    },
-    {
-      "Name": "LabD",
-      "Type": "TH"
     }
   ]
 }

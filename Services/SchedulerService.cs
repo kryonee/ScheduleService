@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using Schedule.Model;
 
-namespace Schedule.Service
+namespace Schedule.Services
 {
     public class ScheduleSlot
     {
-        public string Day { get; set; }     // Monday–Friday
-        public int Period { get; set; }     // 1–5
+        public string Day { get; set; }     
+        public int Period { get; set; }   
     }
 
     public class ScheduledClass
@@ -23,10 +23,10 @@ namespace Schedule.Service
 
     public class SchedulerService
     {
-        private readonly string[] Days = new[] { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday" };
-        private readonly int[] Periods = new[] { 1, 2, 3, 4, 5 };
+        private readonly string[] Days = new[] { "Thứ hai", "Thứ ba", "Thứ tư", "Thứ năm", "Thứ sáu", "Thứ bảy" };
+        private readonly int[] Periods = new[] { 1, 2, 3, 4, 5, 6 };
 
-        private HashSet<string> usedSlots = new(); // Format: "Day_Period_Class", "Day_Period_Teacher", "Day_Period_Room"
+        private HashSet<string> usedSlots = new(); 
 
         public List<ScheduledClass> Generate(TimeTableRequest input)
         {
@@ -74,7 +74,7 @@ namespace Schedule.Service
                                         });
 
                                         scheduled = true;
-                                        goto Scheduled; // break all
+                                        goto Scheduled;
                                     }
                                 }
                             }

@@ -2,7 +2,7 @@
 using System.Text.Json;
 using System.Collections.Generic;
 using Schedule.Model;
-using Schedule.Service;
+using Schedule.Services;
 
 // Giả sử các lớp: Subject, ClassInput, Teacher, Room, TimeTableRequest, ScheduledClass, SchedulerService đã được định nghĩa sẵn
 
