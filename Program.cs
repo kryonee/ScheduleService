@@ -1,49 +1,63 @@
 ﻿using System;
+using System.IO;
+using System.Text;
 using System.Text.Json;
+using System.Text.Encodings.Web;
 using System.Collections.Generic;
 using Schedule.Model;
 using Schedule.Services;
-
-// Giả sử các lớp: Subject, ClassInput, Teacher, Room, TimeTableRequest, ScheduledClass, SchedulerService đã được định nghĩa sẵn
 
 public class Program
 {
     public static void Main()
     {
-        Console.OutputEncoding = System.Text.Encoding.UTF8;
-        string filePath = "input.json";
+        Console.OutputEncoding = Encoding.UTF8;
+        string inputPath = "input.json";
+        string outputPath = "output.json";
 
-        if (!File.Exists(filePath))
+        if (!File.Exists(inputPath))
         {
-            Console.WriteLine("File input.json không tồn tại.");
+            Console.WriteLine("❌ File input.json không tồn tại.");
             return;
         }
 
         try
         {
-            string jsonContent = File.ReadAllText(filePath);
-
+            string jsonContent = File.ReadAllText(inputPath);
             var options = new JsonSerializerOptions
             {
                 PropertyNameCaseInsensitive = true
             };
 
             var input = JsonSerializer.Deserialize<TimeTableRequest>(jsonContent, options);
+            if (input == null)
+            {
+                Console.WriteLine("❌ Dữ liệu input không hợp lệ.");
+                return;
+            }
 
             var scheduler = new SchedulerService();
             var results = scheduler.Generate(input);
 
-            Console.WriteLine("KẾT QUẢ SẮP XẾP THỜI KHÓA BIỂU:");
-            Console.WriteLine("--------------------------------");
+            var jsonOutput = JsonSerializer.Serialize(results, new JsonSerializerOptions
+            {
+                WriteIndented = true,
+                PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+                Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping
+            });
 
+            File.WriteAllText(outputPath, jsonOutput, new UTF8Encoding(encoderShouldEmitUTF8Identifier: false));
+            Console.WriteLine($"\n📁 Đã lưu kết quả vào: {outputPath}");
+
+            Console.WriteLine("\n📅 KẾT QUẢ SẮP XẾP THỜI KHÓA BIỂU:\n");
             foreach (var item in results)
             {
-                Console.WriteLine($"Lớp: {item.ClassName} | Môn: {item.Subject} | GV: {item.Teacher} | Phòng: {item.Room} | {item.Day} - Ca {item.Period}");
+                Console.WriteLine($"Lớp: {item.ClassName,-8} | Môn: {item.Subject,-25} | GV: {item.Teacher,-20} | Phòng: {item.Room,-6} | {item.Day,-10} - Ca {item.Period}");
             }
         }
         catch (Exception ex)
         {
-            Console.WriteLine("Lỗi khi đọc file: " + ex.Message);
+            Console.WriteLine("❗ Lỗi khi xử lý: " + ex.Message);
         }
     }
 }

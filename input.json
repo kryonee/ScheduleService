@@ -97,17 +97,17 @@
     {
       "Name": "ThS. Nguyễn Văn A",
       "Subjects": [ "Lập trình C++", "Cấu trúc dữ liệu" ],
-      "Conditions": []
+      "Conditions": [ "NoMonday" ]
     },
     {
       "Name": "ThS. Trần Thị B",
       "Subjects": [ "Hệ điều hành", "Mạng máy tính" ],
-      "Conditions": []
+      "Conditions": [ "OnlyAfternoon" ]
     },
     {
       "Name": "TS. Phạm Văn C",
       "Subjects": [ "Cơ sở dữ liệu", "Phân tích thiết kế HTTT" ],
-      "Conditions": []
+      "Conditions": [ "AvoidFriday" ]
     },
     {
       "Name": "ThS. Đỗ Thị D",
@@ -117,12 +117,12 @@
     {
       "Name": "ThS. Lê Văn E",
       "Subjects": [ "Lập trình Web" ],
-      "Conditions": []
+      "Conditions": [ "NoEarlyPeriod" ]
     },
     {
       "Name": "TS. Phan Thị F",
       "Subjects": [ "Trí tuệ nhân tạo", "Machine Learning" ],
-      "Conditions": []
+      "Conditions": [ "OnlyAfternoon", "AvoidFriday" ]
     },
     {
       "Name": "ThS. Hồ Văn G",
@@ -132,23 +132,47 @@
     {
       "Name": "ThS. Bùi Thị H",
       "Subjects": [ "Hệ điều hành" ],
-      "Conditions": []
+      "Conditions": [ "NoMonday", "NoEarlyPeriod" ]
     },
     {
       "Name": "ThS. Nguyễn Văn I",
       "Subjects": [ "Mạng máy tính", "An toàn thông tin" ],
-      "Conditions": []
+      "Conditions": [ "AvoidFriday" ]
     },
     {
       "Name": "ThS. Lâm Thị K",
       "Subjects": [ "Phân tích thiết kế HTTT", "Machine Learning" ],
-      "Conditions": []
+      "Conditions": [ "OnlyAfternoon" ]
     }
   ],
   "Rooms": [
     {
       "Name": "B101",
       "Type": "LT"
+    },
+    {
+      "Name": "B102",
+      "Type": "LT"
+    },
+    {
+      "Name": "B103",
+      "Type": "LT"
+    },
+    {
+      "Name": "B201",
+      "Type": "LT"
+    },
+    {
+      "Name": "B202",
+      "Type": "LT"
+    },
+    {
+      "Name": "Lab01",
+      "Type": "TH"
+    },
+    {
+      "Name": "Lab02",
+      "Type": "TH"
     }
   ]
 }

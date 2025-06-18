@@ -1,14 +1,16 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.Json;
+using System.IO;
 using Schedule.Model;
 
 namespace Schedule.Services
 {
     public class ScheduleSlot
     {
-        public string Day { get; set; }     
-        public int Period { get; set; }   
+        public string Day { get; set; }
+        public int Period { get; set; }
     }
 
     public class ScheduledClass
@@ -26,7 +28,7 @@ namespace Schedule.Services
         private readonly string[] Days = new[] { "Thứ hai", "Thứ ba", "Thứ tư", "Thứ năm", "Thứ sáu", "Thứ bảy" };
         private readonly int[] Periods = new[] { 1, 2, 3, 4, 5, 6 };
 
-        private HashSet<string> usedSlots = new(); 
+        private HashSet<string> usedSlots = new();
 
         public List<ScheduledClass> Generate(TimeTableRequest input)
         {
@@ -49,12 +51,18 @@ namespace Schedule.Services
 
                     bool scheduled = false;
 
-                    foreach (var day in Days)
+                    var shuffledDays = Days.OrderBy(_ => Guid.NewGuid()).ToArray();
+                    var shuffledPeriods = Periods.OrderBy(_ => Guid.NewGuid()).ToArray();
+
+                    foreach (var day in shuffledDays)
                     {
-                        foreach (var period in Periods)
+                        foreach (var period in shuffledPeriods)
                         {
                             foreach (var teacher in availableTeachers)
                             {
+                                if (!TeacherIsAvailable(teacher, day, period))
+                                    continue;
+
                                 foreach (var room in availableRooms)
                                 {
                                     string slotKey = $"{day}_{period}";
@@ -88,8 +96,28 @@ namespace Schedule.Services
                     }
                 }
             }
-
+          
             return results;
+        }
+
+        private bool TeacherIsAvailable(Teacher teacher, string day, int period)
+        {
+            if (teacher.Conditions == null || teacher.Conditions.Count == 0)
+                return true;
+
+            if (teacher.Conditions.Contains("NoMonday") && day == "Thứ hai")
+                return false;
+
+            if (teacher.Conditions.Contains("OnlyAfternoon") && period < 4)
+                return false;
+
+            if (teacher.Conditions.Contains("AvoidFriday") && day == "Thứ sáu" && period < 6)
+                return false;
+
+            if (teacher.Conditions.Contains("NoEarlyPeriod") && period == 1)
+                return false;
+
+            return true;
         }
 
 
@@ -107,4 +135,4 @@ namespace Schedule.Services
             usedSlots.Add($"{slot}_ROOM_{roomName}");
         }
     }
-};
+}
