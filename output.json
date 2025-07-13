@@ -1,0 +1,482 @@
+[
+  {
+    "className": "CNTT1_K66",
+    "subject": "Toán cao cấp",
+    "teacher": "TS. Nguyễn Văn A",
+    "room": "A101",
+    "day": "Thứ hai",
+    "period": 4
+  },
+  {
+    "className": "CNTT1_K66",
+    "subject": "Nhập môn lập trình",
+    "teacher": "TS. Nguyễn Văn A",
+    "room": "A101",
+    "day": "Thứ sáu",
+    "period": 4
+  },
+  {
+    "className": "CNTT1_K66",
+    "subject": "Kỹ thuật lập trình",
+    "teacher": "TS. Nguyễn Văn A",
+    "room": "A101",
+    "day": "Thứ bảy",
+    "period": 5
+  },
+  {
+    "className": "CNTT1_K66",
+    "subject": "Cấu trúc dữ liệu & giải thuật",
+    "teacher": "TS. Nguyễn Văn A",
+    "room": "A101",
+    "day": "Thứ năm",
+    "period": 1
+  },
+  {
+    "className": "CNTT1_K66",
+    "subject": "Cơ sở dữ liệu",
+    "teacher": "TS. Nguyễn Văn A",
+    "room": "A101",
+    "day": "Thứ sáu",
+    "period": 6
+  },
+  {
+    "className": "CNTT1_K66",
+    "subject": "Lập trình hướng đối tượng",
+    "teacher": "TS. Nguyễn Văn A",
+    "room": "A101",
+    "day": "Thứ hai",
+    "period": 2
+  },
+  {
+    "className": "CNTT1_K66",
+    "subject": "Lập trình Web",
+    "teacher": "TS. Nguyễn Văn A",
+    "room": "A101",
+    "day": "Thứ ba",
+    "period": 6
+  },
+  {
+    "className": "CNTT1_K66",
+    "subject": "Phát triển phần mềm",
+    "teacher": "TS. Nguyễn Văn A",
+    "room": "A101",
+    "day": "Thứ ba",
+    "period": 2
+  },
+  {
+    "className": "CNTT1_K66",
+    "subject": "Trí tuệ nhân tạo",
+    "teacher": "TS. Nguyễn Văn A",
+    "room": "A101",
+    "day": "Thứ hai",
+    "period": 1
+  },
+  {
+    "className": "CNTT1_K66",
+    "subject": "Machine Learning",
+    "teacher": "TS. Nguyễn Văn A",
+    "room": "A101",
+    "day": "Thứ bảy",
+    "period": 2
+  },
+  {
+    "className": "CNTT1_K66",
+    "subject": "Hệ điều hành",
+    "teacher": "TS. Nguyễn Văn A",
+    "room": "A101",
+    "day": "Thứ hai",
+    "period": 6
+  },
+  {
+    "className": "CNTT1_K66",
+    "subject": "Mạng máy tính",
+    "teacher": "TS. Nguyễn Văn A",
+    "room": "A101",
+    "day": "Thứ hai",
+    "period": 3
+  },
+  {
+    "className": "CNTT2_K66",
+    "subject": "Toán cao cấp",
+    "teacher": "TS. Nguyễn Văn A",
+    "room": "A101",
+    "day": "Thứ sáu",
+    "period": 1
+  },
+  {
+    "className": "CNTT2_K66",
+    "subject": "Nhập môn lập trình",
+    "teacher": "ThS. Trần Thị B",
+    "room": "A102",
+    "day": "Thứ hai",
+    "period": 3
+  },
+  {
+    "className": "CNTT2_K66",
+    "subject": "Kỹ thuật lập trình",
+    "teacher": "TS. Nguyễn Văn A",
+    "room": "A101",
+    "day": "Thứ ba",
+    "period": 5
+  },
+  {
+    "className": "CNTT2_K66",
+    "subject": "Cấu trúc dữ liệu & giải thuật",
+    "teacher": "TS. Nguyễn Văn A",
+    "room": "A101",
+    "day": "Thứ tư",
+    "period": 4
+  },
+  {
+    "className": "CNTT2_K66",
+    "subject": "Cơ sở dữ liệu",
+    "teacher": "ThS. Trần Thị B",
+    "room": "A102",
+    "day": "Thứ hai",
+    "period": 6
+  },
+  {
+    "className": "CNTT2_K66",
+    "subject": "Lập trình hướng đối tượng",
+    "teacher": "ThS. Trần Thị B",
+    "room": "A102",
+    "day": "Thứ sáu",
+    "period": 4
+  },
+  {
+    "className": "CNTT2_K66",
+    "subject": "Lập trình Web",
+    "teacher": "TS. Nguyễn Văn A",
+    "room": "A101",
+    "day": "Thứ tư",
+    "period": 2
+  },
+  {
+    "className": "CNTT2_K66",
+    "subject": "Phát triển phần mềm",
+    "teacher": "TS. Nguyễn Văn A",
+    "room": "A101",
+    "day": "Thứ tư",
+    "period": 1
+  },
+  {
+    "className": "CNTT2_K66",
+    "subject": "Trí tuệ nhân tạo",
+    "teacher": "TS. Nguyễn Văn A",
+    "room": "A101",
+    "day": "Thứ sáu",
+    "period": 5
+  },
+  {
+    "className": "CNTT2_K66",
+    "subject": "Machine Learning",
+    "teacher": "TS. Nguyễn Văn A",
+    "room": "A101",
+    "day": "Thứ ba",
+    "period": 1
+  },
+  {
+    "className": "CNTT2_K66",
+    "subject": "Hệ điều hành",
+    "teacher": "TS. Nguyễn Văn A",
+    "room": "A101",
+    "day": "Thứ sáu",
+    "period": 2
+  },
+  {
+    "className": "CNTT2_K66",
+    "subject": "Mạng máy tính",
+    "teacher": "ThS. Trần Thị B",
+    "room": "A102",
+    "day": "Thứ sáu",
+    "period": 6
+  },
+  {
+    "className": "CNTT3_K66",
+    "subject": "Toán cao cấp",
+    "teacher": "ThS. Trần Thị B",
+    "room": "A102",
+    "day": "Thứ năm",
+    "period": 1
+  },
+  {
+    "className": "CNTT3_K66",
+    "subject": "Nhập môn lập trình",
+    "teacher": "TS. Nguyễn Văn A",
+    "room": "A101",
+    "day": "Thứ năm",
+    "period": 6
+  },
+  {
+    "className": "CNTT3_K66",
+    "subject": "Kỹ thuật lập trình",
+    "teacher": "ThS. Trần Thị B",
+    "room": "A102",
+    "day": "Thứ ba",
+    "period": 5
+  },
+  {
+    "className": "CNTT3_K66",
+    "subject": "Cấu trúc dữ liệu & giải thuật",
+    "teacher": "TS. Nguyễn Văn A",
+    "room": "A101",
+    "day": "Thứ bảy",
+    "period": 1
+  },
+  {
+    "className": "CNTT3_K66",
+    "subject": "Cơ sở dữ liệu",
+    "teacher": "ThS. Trần Thị B",
+    "room": "A102",
+    "day": "Thứ tư",
+    "period": 1
+  },
+  {
+    "className": "CNTT3_K66",
+    "subject": "Lập trình hướng đối tượng",
+    "teacher": "TS. Nguyễn Văn A",
+    "room": "A101",
+    "day": "Thứ tư",
+    "period": 5
+  },
+  {
+    "className": "CNTT3_K66",
+    "subject": "Lập trình Web",
+    "teacher": "TS. Nguyễn Văn A",
+    "room": "A101",
+    "day": "Thứ hai",
+    "period": 5
+  },
+  {
+    "className": "CNTT3_K66",
+    "subject": "Phát triển phần mềm",
+    "teacher": "TS. Nguyễn Văn A",
+    "room": "A101",
+    "day": "Thứ tư",
+    "period": 6
+  },
+  {
+    "className": "CNTT3_K66",
+    "subject": "Trí tuệ nhân tạo",
+    "teacher": "ThS. Trần Thị B",
+    "room": "A102",
+    "day": "Thứ hai",
+    "period": 1
+  },
+  {
+    "className": "CNTT3_K66",
+    "subject": "Machine Learning",
+    "teacher": "TS. Nguyễn Văn A",
+    "room": "A101",
+    "day": "Thứ bảy",
+    "period": 6
+  },
+  {
+    "className": "CNTT3_K66",
+    "subject": "Hệ điều hành",
+    "teacher": "TS. Nguyễn Văn A",
+    "room": "A101",
+    "day": "Thứ ba",
+    "period": 4
+  },
+  {
+    "className": "CNTT3_K66",
+    "subject": "Mạng máy tính",
+    "teacher": "ThS. Trần Thị B",
+    "room": "A102",
+    "day": "Thứ bảy",
+    "period": 2
+  },
+  {
+    "className": "CNTT4_K66",
+    "subject": "Toán cao cấp",
+    "teacher": "ThS. Trần Thị B",
+    "room": "A102",
+    "day": "Thứ bảy",
+    "period": 5
+  },
+  {
+    "className": "CNTT4_K66",
+    "subject": "Nhập môn lập trình",
+    "teacher": "ThS. Trần Thị B",
+    "room": "A102",
+    "day": "Thứ ba",
+    "period": 1
+  },
+  {
+    "className": "CNTT4_K66",
+    "subject": "Kỹ thuật lập trình",
+    "teacher": "TS. Nguyễn Văn A",
+    "room": "A101",
+    "day": "Thứ ba",
+    "period": 3
+  },
+  {
+    "className": "CNTT4_K66",
+    "subject": "Cấu trúc dữ liệu & giải thuật",
+    "teacher": "TS. Nguyễn Văn A",
+    "room": "A101",
+    "day": "Thứ bảy",
+    "period": 3
+  },
+  {
+    "className": "CNTT4_K66",
+    "subject": "Cơ sở dữ liệu",
+    "teacher": "TS. Nguyễn Văn A",
+    "room": "A101",
+    "day": "Thứ tư",
+    "period": 3
+  },
+  {
+    "className": "CNTT4_K66",
+    "subject": "Lập trình hướng đối tượng",
+    "teacher": "ThS. Trần Thị B",
+    "room": "A102",
+    "day": "Thứ hai",
+    "period": 2
+  },
+  {
+    "className": "CNTT4_K66",
+    "subject": "Lập trình Web",
+    "teacher": "TS. Nguyễn Văn A",
+    "room": "A101",
+    "day": "Thứ năm",
+    "period": 4
+  },
+  {
+    "className": "CNTT4_K66",
+    "subject": "Phát triển phần mềm",
+    "teacher": "ThS. Trần Thị B",
+    "room": "A102",
+    "day": "Thứ bảy",
+    "period": 1
+  },
+  {
+    "className": "CNTT4_K66",
+    "subject": "Trí tuệ nhân tạo",
+    "teacher": "ThS. Trần Thị B",
+    "room": "A102",
+    "day": "Thứ hai",
+    "period": 4
+  },
+  {
+    "className": "CNTT4_K66",
+    "subject": "Machine Learning",
+    "teacher": "ThS. Trần Thị B",
+    "room": "A102",
+    "day": "Thứ năm",
+    "period": 6
+  },
+  {
+    "className": "CNTT4_K66",
+    "subject": "Hệ điều hành",
+    "teacher": "ThS. Trần Thị B",
+    "room": "A102",
+    "day": "Thứ hai",
+    "period": 5
+  },
+  {
+    "className": "CNTT4_K66",
+    "subject": "Mạng máy tính",
+    "teacher": "TS. Nguyễn Văn A",
+    "room": "A101",
+    "day": "Thứ năm",
+    "period": 3
+  },
+  {
+    "className": "CNTT5_K66",
+    "subject": "Toán cao cấp",
+    "teacher": "ThS. Trần Thị B",
+    "room": "A102",
+    "day": "Thứ bảy",
+    "period": 6
+  },
+  {
+    "className": "CNTT5_K66",
+    "subject": "Nhập môn lập trình",
+    "teacher": "ThS. Trần Thị B",
+    "room": "A102",
+    "day": "Thứ tư",
+    "period": 4
+  },
+  {
+    "className": "CNTT5_K66",
+    "subject": "Kỹ thuật lập trình",
+    "teacher": "TS. Nguyễn Văn A",
+    "room": "A101",
+    "day": "Thứ sáu",
+    "period": 3
+  },
+  {
+    "className": "CNTT5_K66",
+    "subject": "Cấu trúc dữ liệu & giải thuật",
+    "teacher": "ThS. Trần Thị B",
+    "room": "A102",
+    "day": "Thứ bảy",
+    "period": 3
+  },
+  {
+    "className": "CNTT5_K66",
+    "subject": "Cơ sở dữ liệu",
+    "teacher": "ThS. Trần Thị B",
+    "room": "A102",
+    "day": "Thứ tư",
+    "period": 3
+  },
+  {
+    "className": "CNTT5_K66",
+    "subject": "Lập trình hướng đối tượng",
+    "teacher": "ThS. Trần Thị B",
+    "room": "A102",
+    "day": "Thứ ba",
+    "period": 2
+  },
+  {
+    "className": "CNTT5_K66",
+    "subject": "Lập trình Web",
+    "teacher": "ThS. Trần Thị B",
+    "room": "A102",
+    "day": "Thứ tư",
+    "period": 5
+  },
+  {
+    "className": "CNTT5_K66",
+    "subject": "Phát triển phần mềm",
+    "teacher": "TS. Nguyễn Văn A",
+    "room": "A101",
+    "day": "Thứ bảy",
+    "period": 4
+  },
+  {
+    "className": "CNTT5_K66",
+    "subject": "Trí tuệ nhân tạo",
+    "teacher": "TS. Nguyễn Văn A",
+    "room": "A101",
+    "day": "Thứ năm",
+    "period": 2
+  },
+  {
+    "className": "CNTT5_K66",
+    "subject": "Machine Learning",
+    "teacher": "ThS. Trần Thị B",
+    "room": "A102",
+    "day": "Thứ năm",
+    "period": 3
+  },
+  {
+    "className": "CNTT5_K66",
+    "subject": "Hệ điều hành",
+    "teacher": "ThS. Trần Thị B",
+    "room": "A102",
+    "day": "Thứ tư",
+    "period": 2
+  },
+  {
+    "className": "CNTT5_K66",
+    "subject": "Mạng máy tính",
+    "teacher": "ThS. Trần Thị B",
+    "room": "A102",
+    "day": "Thứ tư",
+    "period": 6
+  }
+]

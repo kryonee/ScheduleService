@@ -1,178 +1,112 @@
 {
-  "Subjects": [
+  "Faculties": [
     {
-      "Name": "Cấu trúc dữ liệu",
-      "Dependency": [],
-      "RoomType": "LT"
-    },
-    {
-      "Name": "Lập trình C++",
-      "Dependency": [],
-      "RoomType": "LT"
-    },
-    {
-      "Name": "Hệ điều hành",
-      "Dependency": [ "Cấu trúc dữ liệu" ],
-      "RoomType": "LT"
-    },
-    {
-      "Name": "Cơ sở dữ liệu",
-      "Dependency": [ "Cấu trúc dữ liệu" ],
-      "RoomType": "LT"
-    },
-    {
-      "Name": "Mạng máy tính",
-      "Dependency": [ "Hệ điều hành" ],
-      "RoomType": "LT"
-    },
-    {
-      "Name": "An toàn thông tin",
-      "Dependency": [ "Mạng máy tính" ],
-      "RoomType": "LT"
-    },
-    {
-      "Name": "Lập trình Web",
-      "Dependency": [ "Lập trình C++" ],
-      "RoomType": "TH"
-    },
-    {
-      "Name": "Trí tuệ nhân tạo",
-      "Dependency": [ "Cơ sở dữ liệu" ],
-      "RoomType": "LT"
-    },
-    {
-      "Name": "Phân tích thiết kế HTTT",
-      "Dependency": [ "Cơ sở dữ liệu" ],
-      "RoomType": "LT"
-    },
-    {
-      "Name": "Machine Learning",
-      "Dependency": [ "Trí tuệ nhân tạo" ],
-      "RoomType": "LT"
+      "Name": "Khoa Công nghệ thông tin",
+      "Subjects": [
+        "Toán cao cấp",
+        "Nhập môn lập trình",
+        "Kỹ thuật lập trình",
+        "Cấu trúc dữ liệu & giải thuật",
+        "Cơ sở dữ liệu"
+      ]
     }
   ],
   "Classes": [
     {
-      "Name": "IT1_K64",
-      "Subjects": [ "Lập trình C++", "Cấu trúc dữ liệu", "Hệ điều hành" ]
+      "Name": "CNTT1_K66",
+      "Faculty": "Khoa Công nghệ thông tin",
+      "Subjects": [
+        "Toán cao cấp",
+        "Nhập môn lập trình",
+        "Kỹ thuật lập trình",
+        "Cấu trúc dữ liệu & giải thuật",
+        "Cơ sở dữ liệu"
+      ]
     },
     {
-      "Name": "IT2_K64",
-      "Subjects": [ "Cấu trúc dữ liệu", "Cơ sở dữ liệu", "Lập trình Web" ]
+      "Name": "CNTT2_K66",
+      "Faculty": "Khoa Công nghệ thông tin",
+      "Subjects": [
+        "Toán cao cấp",
+        "Nhập môn lập trình",
+        "Kỹ thuật lập trình",
+        "Cấu trúc dữ liệu & giải thuật",
+        "Cơ sở dữ liệu"
+      ]
     },
     {
-      "Name": "IT3_K64",
-      "Subjects": [ "Mạng máy tính", "An toàn thông tin", "Trí tuệ nhân tạo" ]
+      "Name": "CNTT3_K66",
+      "Faculty": "Khoa Công nghệ thông tin",
+      "Subjects": [
+        "Toán cao cấp",
+        "Nhập môn lập trình",
+        "Kỹ thuật lập trình",
+        "Cấu trúc dữ liệu & giải thuật",
+        "Cơ sở dữ liệu"
+      ]
     },
     {
-      "Name": "IT4_K64",
-      "Subjects": [ "Cơ sở dữ liệu", "Phân tích thiết kế HTTT", "Machine Learning" ]
+      "Name": "CNTT4_K66",
+      "Faculty": "Khoa Công nghệ thông tin",
+      "Subjects": [
+        "Toán cao cấp",
+        "Nhập môn lập trình",
+        "Kỹ thuật lập trình",
+        "Cấu trúc dữ liệu & giải thuật",
+        "Cơ sở dữ liệu"
+      ]
     },
     {
-      "Name": "IT1_K65",
-      "Subjects": [ "Lập trình C++", "Cấu trúc dữ liệu", "Lập trình Web" ]
+      "Name": "CNTT5_K66",
+      "Faculty": "Khoa Công nghệ thông tin",
+      "Subjects": [
+        "Toán cao cấp",
+        "Nhập môn lập trình",
+        "Kỹ thuật lập trình",
+        "Cấu trúc dữ liệu & giải thuật",
+        "Cơ sở dữ liệu"
+      ]
     },
     {
-      "Name": "IT2_K65",
-      "Subjects": [ "Cơ sở dữ liệu", "Trí tuệ nhân tạo", "Machine Learning" ]
+      "Name": "CNTT6_K66",
+      "Faculty": "Khoa Công nghệ thông tin",
+      "Subjects": [
+        "Toán cao cấp",
+        "Nhập môn lập trình",
+        "Kỹ thuật lập trình",
+        "Cấu trúc dữ liệu & giải thuật",
+        "Cơ sở dữ liệu"
+      ]
     },
     {
-      "Name": "IT3_K65",
-      "Subjects": [ "Mạng máy tính", "An toàn thông tin", "Hệ điều hành" ]
+      "Name": "CNTT7_K66",
+      "Faculty": "Khoa Công nghệ thông tin",
+      "Subjects": [
+        "Toán cao cấp",
+        "Nhập môn lập trình",
+        "Kỹ thuật lập trình",
+        "Cấu trúc dữ liệu & giải thuật",
+        "Cơ sở dữ liệu"
+      ]
     },
     {
-      "Name": "IT4_K65",
-      "Subjects": [ "Cấu trúc dữ liệu", "Phân tích thiết kế HTTT", "Trí tuệ nhân tạo" ]
-    },
-    {
-      "Name": "IT5_K65",
-      "Subjects": [ "Lập trình C++", "Lập trình Web", "Machine Learning" ]
-    },
-    {
-      "Name": "IT6_K65",
-      "Subjects": [ "Hệ điều hành", "An toàn thông tin", "Trí tuệ nhân tạo" ]
+      "Name": "CNTT8_K66",
+      "Faculty": "Khoa Công nghệ thông tin",
+      "Subjects": [
+        "Toán cao cấp",
+        "Nhập môn lập trình",
+        "Kỹ thuật lập trình",
+        "Cấu trúc dữ liệu & giải thuật",
+        "Cơ sở dữ liệu"
+      ]
     }
   ],
   "Teachers": [
     {
-      "Name": "ThS. Nguyễn Văn A",
-      "Subjects": [ "Lập trình C++", "Cấu trúc dữ liệu" ],
-      "Conditions": [ "NoMonday" ]
-    },
-    {
-      "Name": "ThS. Trần Thị B",
-      "Subjects": [ "Hệ điều hành", "Mạng máy tính" ],
-      "Conditions": [ "OnlyAfternoon" ]
-    },
-    {
-      "Name": "TS. Phạm Văn C",
-      "Subjects": [ "Cơ sở dữ liệu", "Phân tích thiết kế HTTT" ],
-      "Conditions": [ "AvoidFriday" ]
-    },
-    {
-      "Name": "ThS. Đỗ Thị D",
-      "Subjects": [ "An toàn thông tin" ],
+      "Name": "TS. Nguyễn Văn A",
+      "Faculty": "Khoa Công nghệ thông tin",
       "Conditions": []
-    },
-    {
-      "Name": "ThS. Lê Văn E",
-      "Subjects": [ "Lập trình Web" ],
-      "Conditions": [ "NoEarlyPeriod" ]
-    },
-    {
-      "Name": "TS. Phan Thị F",
-      "Subjects": [ "Trí tuệ nhân tạo", "Machine Learning" ],
-      "Conditions": [ "OnlyAfternoon", "AvoidFriday" ]
-    },
-    {
-      "Name": "ThS. Hồ Văn G",
-      "Subjects": [ "Cấu trúc dữ liệu" ],
-      "Conditions": []
-    },
-    {
-      "Name": "ThS. Bùi Thị H",
-      "Subjects": [ "Hệ điều hành" ],
-      "Conditions": [ "NoMonday", "NoEarlyPeriod" ]
-    },
-    {
-      "Name": "ThS. Nguyễn Văn I",
-      "Subjects": [ "Mạng máy tính", "An toàn thông tin" ],
-      "Conditions": [ "AvoidFriday" ]
-    },
-    {
-      "Name": "ThS. Lâm Thị K",
-      "Subjects": [ "Phân tích thiết kế HTTT", "Machine Learning" ],
-      "Conditions": [ "OnlyAfternoon" ]
     }
   ],
-  "Rooms": [
-    {
-      "Name": "B101",
-      "Type": "LT"
-    },
-    {
-      "Name": "B102",
-      "Type": "LT"
-    },
-    {
-      "Name": "B103",
-      "Type": "LT"
-    },
-    {
-      "Name": "B201",
-      "Type": "LT"
-    },
-    {
-      "Name": "B202",
-      "Type": "LT"
-    },
-    {
-      "Name": "Lab01",
-      "Type": "TH"
-    },
-    {
-      "Name": "Lab02",
-      "Type": "TH"
-    }
-  ]
+  "Rooms": [{ "Name": "A101" }]
 }

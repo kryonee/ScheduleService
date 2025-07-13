@@ -9,8 +9,7 @@ namespace Schedule.Model
     public class Teacher
     {
         public string Name { get; set; }
-        public List<string> Subjects { get; set; }
+        public string Faculty { get; set; }
         public List<string> Conditions { get; set; } = new(); // ví dụ: ["NoMonday", "OnlyAfternoon"]
     }
-
 }
