@@ -53,8 +53,13 @@ namespace Schedule.Controllers
                 });
 
                 File.WriteAllText(outputPath, jsonOutput, new UTF8Encoding(encoderShouldEmitUTF8Identifier: false));
-                Console.WriteLine($"\n📁Đã lưu kết quả vào: {outputPath}");
-        
+                Console.WriteLine($"\n📁 Đã lưu kết quả vào: {outputPath}");
+
+                // Xuất ra file thời khoá biểu dạng bảng
+                _schedulerService.ExportTimetableExcel(results, "timetable.xlsx");
+                _schedulerService.ExportTeacherTimetableExcel(results, "timetable_teachers.xlsx");
+                _schedulerService.ExportRoomTimetableExcel(results, "timetable_rooms.xlsx");
+
             }
             catch (Exception ex)
             {
@@ -89,6 +94,13 @@ namespace Schedule.Controllers
 
                 File.WriteAllText(outputPath, jsonOutput, new UTF8Encoding(encoderShouldEmitUTF8Identifier: false));
                 Console.WriteLine($"\n📁 Đã lưu kết quả vào: {outputPath}");
+
+                // Xuất ra file Excel
+                _schedulerService.ExportToExcel(results, "schedule.xlsx");
+                // Xuất ra file thời khoá biểu dạng bảng
+                _schedulerService.ExportTimetableExcel(results, "timetable.xlsx");
+                _schedulerService.ExportTeacherTimetableExcel(results, "timetable_teachers.xlsx");
+                _schedulerService.ExportRoomTimetableExcel(results, "timetable_rooms.xlsx");
 
                 return results;
             }

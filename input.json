@@ -4,10 +4,43 @@
       "Name": "Khoa Công nghệ thông tin",
       "Subjects": [
         "Toán cao cấp",
+        "Vật lý đại cương",
         "Nhập môn lập trình",
         "Kỹ thuật lập trình",
         "Cấu trúc dữ liệu & giải thuật",
-        "Cơ sở dữ liệu"
+        "Cơ sở dữ liệu",
+        "Hệ điều hành",
+        "Mạng máy tính",
+        "Lập trình hướng đối tượng",
+        "Lập trình Web",
+        "Phát triển phần mềm",
+        "Trí tuệ nhân tạo",
+        "Machine Learning",
+        "Thực tập doanh nghiệp"
+      ]
+    },
+    {
+      "Name": "Khoa Kinh tế",
+      "Subjects": [
+        "Kinh tế vi mô",
+        "Kinh tế vĩ mô",
+        "Marketing cơ bản",
+        "Quản trị học",
+        "Kế toán tài chính",
+        "Thống kê kinh doanh",
+        "Quản trị nhân sự",
+        "Quản trị sản xuất"
+      ]
+    },
+    {
+      "Name": "Khoa Ngoại ngữ",
+      "Subjects": [
+        "Tiếng Anh cơ bản",
+        "Tiếng Anh chuyên ngành",
+        "Ngữ pháp tiếng Anh",
+        "Kỹ năng giao tiếp",
+        "Dịch thuật",
+        "Văn hóa các nước"
       ]
     }
   ],
@@ -20,7 +53,9 @@
         "Nhập môn lập trình",
         "Kỹ thuật lập trình",
         "Cấu trúc dữ liệu & giải thuật",
-        "Cơ sở dữ liệu"
+        "Cơ sở dữ liệu",
+        "Lập trình hướng đối tượng",
+        "Lập trình Web"
       ]
     },
     {
@@ -28,21 +63,23 @@
       "Faculty": "Khoa Công nghệ thông tin",
       "Subjects": [
         "Toán cao cấp",
+        "Vật lý đại cương",
         "Nhập môn lập trình",
         "Kỹ thuật lập trình",
         "Cấu trúc dữ liệu & giải thuật",
-        "Cơ sở dữ liệu"
+        "Hệ điều hành",
+        "Mạng máy tính"
       ]
     },
     {
       "Name": "CNTT3_K66",
       "Faculty": "Khoa Công nghệ thông tin",
       "Subjects": [
-        "Toán cao cấp",
-        "Nhập môn lập trình",
-        "Kỹ thuật lập trình",
-        "Cấu trúc dữ liệu & giải thuật",
-        "Cơ sở dữ liệu"
+        "Cơ sở dữ liệu",
+        "Lập trình hướng đối tượng",
+        "Phát triển phần mềm",
+        "Lập trình Web",
+        "Trí tuệ nhân tạo"
       ]
     },
     {
@@ -53,60 +90,99 @@
         "Nhập môn lập trình",
         "Kỹ thuật lập trình",
         "Cấu trúc dữ liệu & giải thuật",
-        "Cơ sở dữ liệu"
+        "Machine Learning"
       ]
     },
     {
-      "Name": "CNTT5_K66",
-      "Faculty": "Khoa Công nghệ thông tin",
+      "Name": "KT1_K66",
+      "Faculty": "Khoa Kinh tế",
       "Subjects": [
-        "Toán cao cấp",
-        "Nhập môn lập trình",
-        "Kỹ thuật lập trình",
-        "Cấu trúc dữ liệu & giải thuật",
-        "Cơ sở dữ liệu"
+        "Kinh tế vi mô",
+        "Kinh tế vĩ mô",
+        "Marketing cơ bản",
+        "Quản trị học",
+        "Kế toán tài chính"
       ]
     },
     {
-      "Name": "CNTT6_K66",
-      "Faculty": "Khoa Công nghệ thông tin",
+      "Name": "KT2_K66",
+      "Faculty": "Khoa Kinh tế",
       "Subjects": [
-        "Toán cao cấp",
-        "Nhập môn lập trình",
-        "Kỹ thuật lập trình",
-        "Cấu trúc dữ liệu & giải thuật",
-        "Cơ sở dữ liệu"
+        "Thống kê kinh doanh",
+        "Quản trị nhân sự",
+        "Quản trị sản xuất",
+        "Marketing cơ bản"
       ]
     },
     {
-      "Name": "CNTT7_K66",
-      "Faculty": "Khoa Công nghệ thông tin",
+      "Name": "NN1_K66",
+      "Faculty": "Khoa Ngoại ngữ",
       "Subjects": [
-        "Toán cao cấp",
-        "Nhập môn lập trình",
-        "Kỹ thuật lập trình",
-        "Cấu trúc dữ liệu & giải thuật",
-        "Cơ sở dữ liệu"
+        "Tiếng Anh cơ bản",
+        "Tiếng Anh chuyên ngành",
+        "Ngữ pháp tiếng Anh",
+        "Kỹ năng giao tiếp"
       ]
     },
     {
-      "Name": "CNTT8_K66",
-      "Faculty": "Khoa Công nghệ thông tin",
-      "Subjects": [
-        "Toán cao cấp",
-        "Nhập môn lập trình",
-        "Kỹ thuật lập trình",
-        "Cấu trúc dữ liệu & giải thuật",
-        "Cơ sở dữ liệu"
-      ]
+      "Name": "NN2_K66",
+      "Faculty": "Khoa Ngoại ngữ",
+      "Subjects": [ "Dịch thuật", "Văn hóa các nước", "Tiếng Anh chuyên ngành" ]
     }
   ],
   "Teachers": [
     {
-      "Name": "TS. Nguyễn Văn A",
+      "Name": "NQV",
       "Faculty": "Khoa Công nghệ thông tin",
       "Conditions": []
+    },
+    {
+      "Name": "Nguyễn Nhựt Tân",
+      "Faculty": "Khoa Công nghệ thông tin",
+      "Conditions": [ "NoMonday" ]
+    },
+    {
+      "Name": "Nguyễn Thành Danh",
+      "Faculty": "Khoa Công nghệ thông tin",
+      "Conditions": [ "OnlyAfternoon" ]
+    },
+
+    {
+      "Name": "Dung Thị Cẩm Phương",
+      "Faculty": "Khoa Kinh tế",
+      "Conditions": [ "NoMonday" ]
+    },
+    {
+      "Name": "Huỳnh Hữu Nghị",
+      "Faculty": "Khoa Kinh tế",
+      "Conditions": [ "OnlyAfternoon" ]
+    },
+    {
+      "Name": "Từ Thị Quỳnh Như",
+      "Faculty": "Khoa Kinh tế",
+      "Conditions": [ "OnlyMorning" ]
+    },
+    {
+      "Name": "Nguyễn Phúc Lộc",
+      "Faculty": "Khoa Kinh tế",
+      "Conditions": [ "OnlyMorning" ]
+    },
+    {
+      "Name": "TMK",
+      "Faculty": "Khoa Ngoại ngữ",
+      "Conditions": [ "NoMonday" ]
+    },
+    {
+      "Name": "Nguyễn Thanh Tâm",
+      "Faculty": "Khoa Ngoại ngữ",
+      "Conditions": [ "OnlyAfternoon" ]
     }
   ],
-  "Rooms": [{ "Name": "A101" }]
+  "Rooms": [
+    { "Name": "A101" },
+    { "Name": "A102" },
+    { "Name": "A201" },
+    { "Name": "A202" },
+    { "Name": "A301" }
+  ]
 }
