@@ -28,7 +28,7 @@ namespace Schedule.Services
     public class SchedulerService
     {
         private readonly string[] Days = new[] { "Thứ hai", "Thứ ba", "Thứ tư", "Thứ năm", "Thứ sáu", "Thứ bảy" };
-        private readonly int[] Periods = new[] { 1, 2 }; // 1: Morning, 2: Afternoon
+        private readonly int[] Periods = new[] { 1, 2 };
 
         private HashSet<string> usedSlots = new();
 
@@ -42,8 +42,8 @@ namespace Schedule.Services
             if (teacher.NoSaturday && day == "Thứ bảy") return false;
             if (teacher.NoSunday && day == "Chủ nhật") return false;
             if (teacher.AvoidFriday && day == "Thứ sáu") return false;
-            if (teacher.OnlyMorning && period != 1) return false; // Chỉ dạy buổi sáng
-            if (teacher.OnlyAfternoon && period != 2) return false; // Chỉ dạy buổi chiều
+            if (teacher.OnlyMorning && period != 1) return false;
+            if (teacher.OnlyAfternoon && period != 2) return false; 
             return true;
         }
 
@@ -75,7 +75,6 @@ namespace Schedule.Services
 
         private bool IsSlotAvailable(string slotKey, string className, string teacherName, string roomName)
         {
-            // Check if the slot is already used by this class, teacher, or room
             return !usedSlots.Contains($"{slotKey}_{className}") &&
                    !usedSlots.Contains($"{slotKey}_{teacherName}") &&
                    !usedSlots.Contains($"{slotKey}_{roomName}");
@@ -113,7 +112,6 @@ namespace Schedule.Services
             {
                 foreach (var subjectName in classItem.Subjects)
                 {
-                    // Kiểm tra môn học có thuộc khoa của lớp không
                     var faculty = input.Faculties.FirstOrDefault(f => f.Name == classItem.Faculty);
                     if (faculty == null)
                     {
@@ -133,7 +131,6 @@ namespace Schedule.Services
                         continue;
                     }
 
-                    // Tìm giáo viên trong cùng khoa
                     var availableTeachers = input.GetTeachers()
                         .Where(t => t.Faculty == classItem.Faculty)
                         .ToList();
@@ -147,7 +144,6 @@ namespace Schedule.Services
                         continue;
                     }
 
-                    // Tất cả phòng đều có thể sử dụng
                     var availableRooms = input.Rooms.ToList();
 
                     if (availableRooms.Count == 0)
@@ -228,7 +224,6 @@ namespace Schedule.Services
                             var error = $"❌ Tất cả slot đã bị chiếm, không thể xếp lịch cho lớp {classItem.Name} môn {subjectName}";
                             Console.WriteLine(error);
 
-                            // Kiểm tra tất cả các slot để tìm xung đột
                             var conflictDetails = new List<string>();
                             foreach (var day in Days)
                             {
@@ -244,11 +239,10 @@ namespace Schedule.Services
                                 }
                             }
 
-                            // Hiển thị tất cả xung đột tìm được
                             if (conflictDetails.Count > 0)
                             {
                                 Console.WriteLine("   Chi tiết xung đột:");
-                                foreach (var detail in conflictDetails.Take(5)) // Giới hạn hiển thị 5 xung đột đầu
+                                foreach (var detail in conflictDetails.Take(5))
                                 {
                                     Console.WriteLine(detail);
                                 }
@@ -271,7 +265,7 @@ namespace Schedule.Services
             if (failedSchedules.Count > 0)
             {
                 File.WriteAllLines(errorLogPath, errorLog);
-                Console.WriteLine($"\n📄 Đã ghi log lỗi chi tiết vào: {errorLogPath}");
+                Console.WriteLine($"\n Đã ghi log lỗi chi tiết vào: {errorLogPath}");
             }
 
             return results;
@@ -285,7 +279,6 @@ namespace Schedule.Services
             {
                 var worksheet = package.Workbook.Worksheets.Add("Lịch học");
 
-                // Định dạng header
                 worksheet.Cells[1, 1].Value = "Thứ";
                 worksheet.Cells[1, 2].Value = "Tiết";
                 worksheet.Cells[1, 3].Value = "Lớp";
@@ -293,7 +286,6 @@ namespace Schedule.Services
                 worksheet.Cells[1, 5].Value = "Giáo viên";
                 worksheet.Cells[1, 6].Value = "Phòng học";
 
-                // Định dạng header
                 using (var range = worksheet.Cells[1, 1, 1, 6])
                 {
                     range.Style.Font.Bold = true;
@@ -302,7 +294,6 @@ namespace Schedule.Services
                     range.Style.Border.BorderAround(OfficeOpenXml.Style.ExcelBorderStyle.Thin);
                 }
 
-                // Thêm dữ liệu
                 int row = 2;
                 foreach (var item in schedule.OrderBy(s => s.Day).ThenBy(s => s.Period).ThenBy(s => s.ClassName))
                 {
@@ -313,7 +304,6 @@ namespace Schedule.Services
                     worksheet.Cells[row, 5].Value = item.Teacher;
                     worksheet.Cells[row, 6].Value = item.Room;
 
-                    // Định dạng border cho từng dòng
                     using (var range = worksheet.Cells[row, 1, row, 6])
                     {
                         range.Style.Border.BorderAround(OfficeOpenXml.Style.ExcelBorderStyle.Thin);
@@ -322,14 +312,12 @@ namespace Schedule.Services
                     row++;
                 }
 
-                // Tự động điều chỉnh độ rộng cột
                 worksheet.Cells.AutoFitColumns();
 
-                // Lưu file
                 package.SaveAs(new FileInfo(filePath));
             }
 
-            Console.WriteLine($"📊 Đã xuất lịch học ra file Excel: {filePath}");
+            Console.WriteLine($" Đã xuất lịch học ra file Excel: {filePath}");
         }
 
         public void ExportTimetableExcel(List<ScheduledClass> schedule, string filePath = "timetable.xlsx")
@@ -339,7 +327,6 @@ namespace Schedule.Services
             var periods = new[] { 1, 2 };
             var periodNames = new[] { "Sáng", "Chiều" };
 
-            // Lấy danh sách lớp
             var classNames = schedule.Select(s => s.ClassName).Distinct().OrderBy(x => x).ToList();
 
             using (var package = new ExcelPackage())
@@ -348,7 +335,6 @@ namespace Schedule.Services
                 {
                     var worksheet = package.Workbook.Worksheets.Add(className);
 
-                    // Header
                     worksheet.Cells[1, 1].Value = "Tiết/Thứ";
                     for (int d = 0; d < days.Length; d++)
                     {
@@ -356,7 +342,6 @@ namespace Schedule.Services
                     }
                     worksheet.Row(1).Style.Font.Bold = true;
 
-                    // Ghi từng tiết
                     for (int p = 0; p < periods.Length; p++)
                     {
                         worksheet.Cells[p + 2, 1].Value = periodNames[p];
@@ -379,7 +364,7 @@ namespace Schedule.Services
                 }
                 package.SaveAs(new FileInfo(filePath));
             }
-            Console.WriteLine($"📊 Đã xuất thời khoá biểu dạng bảng ra file: {filePath}");
+            Console.WriteLine($"Đã xuất thời khoá biểu dạng bảng ra file: {filePath}");
         }
 
         public void ExportTeacherTimetableExcel(List<ScheduledClass> schedule, string filePath = "timetable_teachers.xlsx")
@@ -415,7 +400,7 @@ namespace Schedule.Services
                 }
                 package.SaveAs(new FileInfo(filePath));
             }
-            Console.WriteLine($"📊 Đã xuất thời khoá biểu giáo viên ra file: {filePath}");
+            Console.WriteLine($"Đã xuất thời khoá biểu giáo viên ra file: {filePath}");
         }
 
         public void ExportRoomTimetableExcel(List<ScheduledClass> schedule, string filePath = "timetable_rooms.xlsx")
@@ -451,7 +436,7 @@ namespace Schedule.Services
                 }
                 package.SaveAs(new FileInfo(filePath));
             }
-            Console.WriteLine($"📊 Đã xuất thời khoá biểu phòng học ra file: {filePath}");
+            Console.WriteLine($"Đã xuất thời khoá biểu phòng học ra file: {filePath}");
         }
     }
 }

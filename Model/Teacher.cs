@@ -15,6 +15,10 @@ namespace Schedule.Model
 
     public class Teacher
     {
+        public string Id { get; set; }
+        public string FacultyId { get; set; }
+        public string UserInternalId { get; set; }
+        public bool IsActived { get; set; }
         public string Name { get; set; }
         public string Faculty { get; set; }
         public bool NoMonday { get; set; }
@@ -25,8 +29,8 @@ namespace Schedule.Model
         public bool NoSaturday { get; set; }
         public bool NoSunday { get; set; }
         public bool AvoidFriday { get; set; }
-        public bool OnlyMorning { get; set; } 
-        public bool OnlyAfternoon { get; set; } 
+        public bool OnlyMorning { get; set; }
+        public bool OnlyAfternoon { get; set; }
 
         public static Teacher FromInput(TeacherInput input)
         {

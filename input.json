@@ -134,7 +134,7 @@
     {
       "Name": "NQV",
       "Faculty": "Khoa Công nghệ thông tin",
-      "Conditions": []
+      "Conditions": ["NoMonday"]
     },
     {
       "Name": "Nguyễn Nhựt Tân",

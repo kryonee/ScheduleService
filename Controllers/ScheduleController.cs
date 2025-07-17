@@ -93,7 +93,7 @@ namespace Schedule.Controllers
                 });
 
                 File.WriteAllText(outputPath, jsonOutput, new UTF8Encoding(encoderShouldEmitUTF8Identifier: false));
-                Console.WriteLine($"\n📁 Đã lưu kết quả vào: {outputPath}");
+                Console.WriteLine($"\n Đã lưu kết quả vào: {outputPath}");
 
                 // Xuất ra file Excel
                 _schedulerService.ExportToExcel(results, "schedule.xlsx");
